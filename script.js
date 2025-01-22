@@ -1,5 +1,4 @@
 
-
 /**
  * Pose Detection Application
  * Using TensorFlow.js and Teachable Machine
@@ -247,4 +246,3 @@ function stopWebcam() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
     }
 }
-
