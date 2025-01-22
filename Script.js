@@ -113,32 +113,32 @@ function checkPose(prediction, video) {
         };
     }
 
-    if (prob > 0.8 && !explosionActive) {
+    if (prob > 0.7 && !explosionActive) {
         const poseState = poseStates[`pose${poseNumber}`];
 
         switch(poseNumber) {
             case '1':
-                if (time >= 2 && time <= 5 && !poseState.triggered) {
+                if (time >= 1.0 && time <= 5.0 && !poseState.triggered) {
                     triggerExplosion(poseState);
                 }
                 break;
             case '2':
-                if (time >= 5 && time <= 8 && !poseState.triggered) {
+                if (time >= 5.0 && time <= 8.0 && !poseState.triggered) {
                     triggerExplosion(poseState);
                 }
                 break;
             case '3':
-                if (time >= 17 && time <= 19 && !poseState.triggered) {
+               if (time >= 17.0 && time <= 19.0 && !poseState.triggered) {
                     triggerExplosion(poseState);
                 }
                 break;
             case '4':
-                if (time >= 20 && time <= 22 && !poseState.triggered) {
+                if (time >= 20.0 && time <= 22.0 && !poseState.triggered) {
                     triggerExplosion(poseState);
                 }
                 break;
             case '5':
-                if (time >= 25 && !poseState.triggered) {
+                if (time >= 25.0 && !poseState.triggered) {
                     triggerExplosion(poseState);
                 }
                 break;
@@ -235,12 +235,7 @@ function stopInstructionVideo() {
     if (canvas) {
         canvas.remove();
     }
-    pose1Triggered = false;
-    pose2Triggered = false;
-    pose3FirstWindowTriggered = false;
-    pose3SecondWindowTriggered = false;
-    pose4Triggered = false;
-    pose5Triggered = false;
+    poseStates = {};
 }
 
 function stopWebcam() {
