@@ -1,25 +1,5 @@
 
-Conversation opened. 1 read message.
 
-Skip to content
-Using TDSB Mail with screen readers
-4 of 259
-(no subject)
-Inbox
-
-Jimenez, Andrew
-Attachments
-1:49 PM (43 minutes ago)
-to me
-
-
-
---
-Andrew Jimenez
-Teacher, Birchmount Park C.I.
-416-396-6704
- 4 Attachments
-  •  Scanned by Gmail
 /**
  * Pose Detection Application
  * Using TensorFlow.js and Teachable Machine
@@ -267,5 +247,4 @@ function stopWebcam() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
     }
 }
-newafiascript.txt
-Displaying newafiascript.txt.
+
